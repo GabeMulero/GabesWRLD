@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Plaid MCP — development integration for linking financial accounts via Plaid." />
+  <title>Plaid MCP (Python)</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fafafa;
+      --text: #171717;
+      --muted: #525252;
+      --border: #e5e5e5;
+      --link: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0a0a;
+        --text: #fafafa;
+        --muted: #a3a3a3;
+        --border: #262626;
+        --link: #60a5fa;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    .tagline { color: var(--muted); font-size: 1rem; margin: 0 0 2rem; }
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+    }
+    h2:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
+    p { margin: 0 0 1rem; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 1.5rem 0 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.9375rem;
+      font-weight: 500;
+    }
+    .btn:hover { text-decoration: none; opacity: 0.9; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Plaid MCP</h1>
+      <p class="tagline">A Python <a href="https://modelcontextprotocol.io/">Model Context Protocol</a> server for <a href="https://plaid.com/">Plaid</a> — accounts, balances, and transactions.</p>
+      <nav class="actions" aria-label="Primary">
+        <a class="btn" href="https://github.com/GabeMulero/GabesWRLD">This site (GitHub)</a>
+        <a class="btn" href="https://github.com/argotdev/plaid-mcp-python">MCP server code</a>
+        <a class="btn" href="#privacy">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>About</h2>
+      <p>
+        This is a <strong>development and integration</strong> project: it exposes Plaid APIs to MCP-compatible
+        clients (for example AI assistants) so you can build and test account linking and financial data flows in a controlled way.
+      </p>
+      <p>
+        End-user financial authentication runs through <strong>Plaid Link</strong> and Plaid’s infrastructure; this site is only a project description for integrators and partners.
+      </p>
+
+      <h2 id="privacy">Privacy</h2>
+      <p>
+        This static page does not set tracking cookies or collect personal information. Plaid’s services handle bank connection and data according to
+        <a href="https://plaid.com/legal/">Plaid’s terms and policies</a>. For questions about the MCP server, see the
+        <a href="https://github.com/argotdev/plaid-mcp-python">plaid-mcp-python</a> repository.
+      </p>
+    </main>
+
+    <footer>
+      <p>Site repository: <a href="https://github.com/GabeMulero/GabesWRLD">github.com/GabeMulero/GabesWRLD</a></p>
+    </footer>
+  </div>
+</body>
+</html>
